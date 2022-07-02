@@ -1,21 +1,22 @@
-﻿Console.WriteLine("Введите number1: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите number2: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
+﻿Console.WriteLine("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите третье число: ");
+int c = Convert.ToInt32(Console.ReadLine());
 
-int max;
-int min;
+int max; 
 
-
-if (number1 > number2)
+if (b < a && a > c)
 {
-   max = number1;
-   min = number2;   
+    max = a;
+}
+else if (a < b && b > c)
+{
+    max = b;
 }
 else
 {
-   max = number2;
-   min = number1;  
+    max = c;
 }
 Console.WriteLine("max = " + max);
-Console.WriteLine("min = " + min);
